@@ -1,2 +1,2 @@
 # MyPlanner
-Personal project that allows users to keep track of their schoolwork.
+This is a personal project of mine that allows users to keep track of their schoolwork. Users can create and edit their accounts. Upon account creation, users have to choose their starting semester (Spring, Summer, Fall) along with the year. After doing so, users can create their courses and create assignments for said courses. On the homepage, users can see all of their unfinished assignments, and on the tasks page edit those assignments to show completion, edit their contents, as well as create more assignments, courses, or semesters.
