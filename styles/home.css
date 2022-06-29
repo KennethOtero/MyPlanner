@@ -1,0 +1,374 @@
+/* ================ Worldwide Styling ================ */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #424242;
+}
+
+body {
+    background-color: #ecebee;
+    max-height: 100%;
+    min-height: 100%;
+    /* 10 pixels taller than footer to make footer not overlap elements */
+    margin-bottom: 145px;
+}
+
+/* ================ Navigation Bar Styling ================ */
+
+header {
+    background-color: #fff;
+    filter: drop-shadow(0 0 0.25rem #424242);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #424242;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 100px;
+    gap: 60px;
+}
+
+.nav-branding {
+    font-size: 2rem;
+    color: #7d35ce;
+    padding-right: 100px;
+}
+
+.nav-link {
+    transition: 0.15s ease;
+}
+
+.nav-link:hover {
+    background-color:#7d35ce;
+    color: #fff;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #7d35ce;
+}
+
+/* ================ Upcoming Assignments Styling ================ */
+.container {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.Upcoming {
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 10px 15px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    align-items: center;
+}
+
+.Upcoming p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #7d35ce;
+    text-align: center;
+    font-size: 1.3em;
+    width: 100%;
+}
+
+#UpcomingTable {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    border-radius: 6px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+  
+#UpcomingTable td, #UpcomingTable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+  
+#UpcomingTable tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+#UpcomingTable tr:nth-child(odd){
+    background-color: #fff;
+}
+  
+#UpcomingTable tr:hover {
+      background-color: #ddd;
+}
+  
+#UpcomingTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #7d35ce;
+    color: white;
+}
+
+#UpcomingTable a {
+    color: #7d35ce;
+    text-decoration: none;
+    padding-left: 0;
+}
+
+#UpcomingTable a:hover {
+    text-decoration: underline;
+}
+
+/* ================ Current Courses Table ================ */
+.container {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.classes {
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 10px 15px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    align-items: center;
+}
+
+.classes p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #7d35ce;
+    text-align: center;
+    font-size: 1.3em;
+    width: 100%;
+}
+
+#AllCourses {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    border-radius: 6px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+  
+#AllCourses td, #AllCourses th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+  
+#AllCourses tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+#AllCourses tr:nth-child(odd){
+    background-color: #fff;
+}
+  
+#AllCourses tr:hover {
+      background-color: #ddd;
+}
+  
+#AllCourses th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #7d35ce;
+    color: white;
+}
+
+#AllCourses a {
+    color: #7d35ce;
+    text-decoration: none;
+    padding-left: 0;
+}
+
+#AllCourses a:hover {
+    text-decoration: underline;
+}
+
+.Add {
+    text-align: center;
+}
+
+.Add a {
+    color: #7d35ce;
+}
+
+.Add:hover {
+    text-decoration: underline;
+}
+
+/* ================ Release Notes ================ */
+.content {
+    background-color: #fff;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 10px 15px;
+    border-radius: 6px;
+}
+
+.content a {
+    color: #7d35ce;
+    padding-left: 0;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
+
+.Title {
+    color: #7d35ce;
+    text-align: center;
+    font-size: 1.3em;
+    padding: 10px 15px;
+    border-bottom: 2px solid silver;
+}
+
+.Date {
+    font-size: 1.15em;
+    color: #7d35ce;
+    margin-top: 10px;
+}
+
+.content ul {
+    margin-top: 10px;
+    padding-left: 15px;
+}
+
+.content li {
+    height: 27px;
+    list-style-type: disc;
+    margin-left: 15px;
+}
+
+/* ================ Footer ================ */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #7d35ce;
+    color: #fff;
+    padding: 10px 15px;
+    height: 135px;
+}
+
+@media (max-height: 910px) {
+    .footer {
+        position: relative;
+        margin-top: 15px;
+    }
+}
+
+.footer h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 10px;
+    color: #fff;
+}
+
+.footer li {
+    text-align: center;
+    height: 27px;
+    color: #fff;
+}
+
+/* ================ Mobile Styling ================ */
+
+@media (max-width: 1180px) {
+    header {
+        /* Show header/hamburger menu over ALL elements */
+        position: relative;
+        z-index: 99;
+    }
+
+    .hamburger {
+        display: block;
+    }
+    
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    .nav-menu {
+        position: fixed;
+        right: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        align-items: flex-end;
+        padding-right: 25px;
+        visibility: hidden;
+    }
+    
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        right: 0;
+        visibility: visible;
+    }
+
+    .navbar {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #AllCourses {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .Upcoming {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}

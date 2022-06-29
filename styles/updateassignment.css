@@ -1,0 +1,207 @@
+.container {
+    padding: 10px 15px;
+    background-color: #fff;
+    border-radius: 12px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px;
+}
+
+.AddTask p {
+    font-size: 2rem;
+    color: #7d35ce;
+    text-align: center;
+    border-bottom: 1px solid silver;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.AddTask select {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-bottom: 2px solid silver;
+    outline: none;
+    padding-left: 10px;
+}
+
+.AddTask input[type="text"] {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-bottom: 2px solid silver;
+    outline: none;
+    padding-left: 10px;
+}
+
+.AddTask input[type="datetime-local"] {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-bottom: 2px solid silver;
+    outline: none;
+    padding-left: 10px;
+}
+
+.AddTask textarea {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-bottom: 2px solid silver;
+    outline: none;
+    resize: vertical;
+    padding-left: 10px;
+}
+
+.AddTask select:focus {
+    border-bottom: 2px solid #7d35ce;
+    transition: 0.25s;
+}
+.AddTask input:focus {
+    border-bottom: 2px solid #7d35ce;
+    transition: 0.25s;
+}
+.AddTask textarea:focus {
+    border-bottom: 2px solid #7d35ce;
+    transition: 0.25s;
+}
+
+.AddTask select:hover {
+    border-bottom: 2px solid #7d35ce;
+    transition: 0.25s;
+}
+.AddTask input:hover {
+    border-bottom: 2px solid #7d35ce;
+    transition: 0.25s;
+}
+.AddTask textarea:hover {
+    border-bottom: 2px solid #7d35ce;
+    transition: 0.25s;
+}
+
+input[type="submit"] {
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background-color: #7d35ce;
+    border-radius: 12px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+input[type="submit"]:hover {
+    border-color: #7d35ce;
+    transition: 0.25s;
+}
+
+input[type="range"]:hover {
+    border: none;
+    transition: 0.25s;
+}
+
+input[type="range"]:focus {
+    border: none;
+    transition: 0.25s;
+}
+
+.fields:hover {
+    color: #7d35ce;
+}
+
+.slidecontainer {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border-radius: 6px;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #7d35ce;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+input[type="range"] {
+    margin-top: 10px;
+}
+
+/* Show success message */
+#message {
+    text-align: center;
+    color: green;
+    background-color: #fff;
+    border-bottom: 2px solid green;
+    padding: 10px 15px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px;
+    display: none;
+}
+
+/* Error message */
+.text-danger {
+    color: red;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+}
+
+/* Style delete link */
+.Add a {
+    color: #7d35ce;
+    text-align: center;
+}
+
+.Add a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 910px) {
+    .container {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}

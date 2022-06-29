@@ -1,0 +1,82 @@
+.semester {
+    color: #7d35ce;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-top: 15px;
+    background-color: #fff;
+    border-radius: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+}
+
+.semester p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #7d35ce;
+}
+
+.AddTask {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    max-width: 1000px;
+    border-radius: 12px;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.AddTask a {
+    color: #7d35ce;
+    text-align: center;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border: 2px solid #7d35ce;
+    border-radius: 6px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.AddTask a:hover {
+    background-color: #7d35ce;
+    color: #fff;
+    transition: 0.25s;
+}
+
+.container {
+    padding: 10px 15px;
+    background-color: #fff;
+    border-radius: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+}
+
+.container p {
+    color: #7d35ce;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Mobile styling */
+@media (max-width: 960px) {
+    .semester {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .container {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .AddTask {
+        margin-left: 10px;
+        margin-right: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+}
