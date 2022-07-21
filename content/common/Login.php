@@ -20,7 +20,7 @@
     <header>
         <nav class="navbar">
             <a href="../../index.php" class="nav-branding">MY PLANNER</a>
-            <ul class="nav-menu">
+            <ul class="nav-menu" id="nav-menu">
                 <li class="nav-item">
                     <a href="../../index.php" class="nav-link">Home</a>
                 </li>
@@ -60,11 +60,11 @@
                     }
                 ?>
             </ul>
-            <div class="hamburger" id="hamburger">
+            <button id="hamburger" class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
-            </div>
+            </button>
         </nav>
     </header>
 
