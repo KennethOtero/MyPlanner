@@ -46,7 +46,7 @@ function ajax() {
 
             if (response == "Success") {
                 // Go to next reset password page
-                window.location.href = "../content/ResetPassword2.php";
+                window.location.href = "../content/common/ResetPassword2.php";
             } else {
                 // Display error
                 document.getElementById('message').innerHTML = "Email Does Not Exist";
