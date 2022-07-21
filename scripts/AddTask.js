@@ -42,7 +42,7 @@ function ajax() {
 
         // AJAX
         var xhr = new XMLHttpRequest();
-        xhr.open("POST", "../content/Process_AddTask.php");
+        xhr.open("POST", "../content/restricted/Process_AddTask.php");
         xhr.onload = function() {
             var result = xhr.responseText;
             if (result == "Success") {
