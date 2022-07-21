@@ -59,11 +59,11 @@
                     }
                 ?>
             </ul>
-            <div class="hamburger" id="hamburger">
+            <button id="hamburger" class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
-            </div>
+            </button>
         </nav>
     </header>
 
