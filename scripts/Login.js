@@ -52,7 +52,7 @@ function ajax() {
 
         // AJAX
         var xhr = new XMLHttpRequest();
-        xhr.open("POST", "../content/Process_Login.php");
+        xhr.open("POST", "../content/restricted/Process_Login.php");
         xhr.onload = function(e) {
             // Receive either 'Success' or 'Failed' from PHP file
             var response = xhr.responseText;
