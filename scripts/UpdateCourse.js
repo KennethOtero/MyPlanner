@@ -97,7 +97,7 @@ function ajax() {
 
         // AJAX
         var xhr = new XMLHttpRequest();
-        xhr.open("POST", "../content/Process_UpdateCourse.php?ID=" + intCourseID);
+        xhr.open("POST", "../content/restricted/Process_UpdateCourse.php?ID=" + intCourseID);
         xhr.onload = function() {
             var response = xhr.responseText;
             if (response == "Success") {
@@ -110,7 +110,7 @@ function ajax() {
                 // Hide success message after 5 seconds and go to Tasks
                 setTimeout(() => {                
                     Success.style.display = 'none';
-                    window.location.href = "../content/Tasks.php";
+                    window.location.href = "../content/common/Tasks.php";
                 }, 5000);
             } else {
                 // Display error
@@ -152,7 +152,7 @@ function deleteCourse() {
 
             // AJAX
             var xhr = new XMLHttpRequest();
-            xhr.open("POST", "../content/Process_DeleteCourse.php?ID=" + intCourseID);
+            xhr.open("POST", "../content/restricted/Process_DeleteCourse.php?ID=" + intCourseID);
             xhr.onload = function() {
                 var result = xhr.responseText;
                 if (result == "Success") {
