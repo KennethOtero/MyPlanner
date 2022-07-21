@@ -17,15 +17,15 @@
     <header>
         <nav class="navbar">
             <a href="index.php" class="nav-branding">MY PLANNER</a>
-            <ul class="nav-menu">
+            <ul class="nav-menu" id="nav-menu">
                 <li class="nav-item">
                     <a href="index.php" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="content/Tasks.php" class="nav-link">Tasks</a>
+                    <a href="content/common/Tasks.php" class="nav-link">Tasks</a>
                 </li>
                 <li class="nav-item">
-                    <a href="content/Calendar.php" class="nav-link">Schedule</a>
+                    <a href="content/common/Calendar.php" class="nav-link">Schedule</a>
                 </li>
                 <?php 
                     // Create login session variables and set to false
@@ -37,27 +37,27 @@
                         echo 
                         '
                         <li class="nav-item">
-                            <a href="content/Profile.php" class="nav-link">Profile</a>
+                            <a href="content/common/Profile.php" class="nav-link">Profile</a>
                         </li>
                         <li class="nav-item">
-                            <a href="content/Logout.php" class="nav-link">Log Out</a>
+                            <a href="content/common/Logout.php" class="nav-link">Log Out</a>
                         </li>
                         ';
                     } else {
                         echo 
                         '
                         <li class="nav-item">
-                            <a href="content/Login.php" class="nav-link">Sign In</a>
+                            <a href="content/common/Login.php" class="nav-link">Sign In</a>
                         </li>
                         ';
                     }
                 ?>
             </ul>
-            <div class="hamburger" id="hamburger">
+            <button id="hamburger" class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
-            </div>
+            </button>
         </nav>
     </header>
 
@@ -71,7 +71,7 @@
                     <th>Due Date</th>
                     <th>Status</th>
                 </tr>
-                <?php require "content/LoadAssignments.php";?>
+                <?php require "content/common/LoadAssignments.php";?>
             </table>
         </div>
     </div>
@@ -85,9 +85,9 @@
                     <th>Course Name</th>
                     <th>Instructor</th>
                 </tr>
-                <?php require "content/LoadCourses.php";?>
+                <?php require "content/common/LoadCourses.php";?>
                 <tr>
-                    <td colspan="4" class="Add"><a href="content/AddCourse.php">Add A Course</a></td>
+                    <td colspan="4" class="Add"><a href="content/common/AddCourse.php">Add A Course</a></td>
                 </tr>
             </table>
         </div>
@@ -96,9 +96,10 @@
     <div class="container">
         <div class="content">
             <p class="Title">MY PLANNER UPDATE NOTES</p>
-            <p class="Date">UPDATE 05/29/2022</p>
+            <p class="Date">UPDATE 07/21/2022</p>
             <ul>
                 <li>Menu improvements</li>
+                <li>File organization</li>
             </ul>
             <p class="Date">UPDATE 05/28/2022</p>
             <ul>
