@@ -63,7 +63,7 @@
                 echo 
                 '
                 <tr>
-                    <td><a href="content/UpdateCourse.php?ID='. $intCourseID .'">'. $CourseNumber .'</a></td>
+                    <td><a href="content/common/UpdateCourse.php?ID='. $intCourseID .'">'. $CourseNumber .'</a></td>
                     <td>'. $Course .'</td>
                     <td>'. $Instructor .'</td>
                 </tr>
