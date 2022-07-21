@@ -70,7 +70,7 @@
                         <td>'. $Class .'</td>
                         <td>'. $Assignment .'</td>
                         <td>'. $Date .'</td>
-                        <td><a href="content/UpdateAssignment.php?ID='. $intAssignmentID .'">'. $Status .'</a></td>
+                        <td><a href="content/common/UpdateAssignment.php?ID='. $intAssignmentID .'">'. $Status .'</a></td>
                     </tr>
                     ';
                 }
