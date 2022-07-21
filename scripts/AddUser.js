@@ -98,7 +98,7 @@ function ajax() {
 
         // AJAX
         var xhr = new XMLHttpRequest();
-        xhr.open("POST", "../content/Process_AddUser.php");
+        xhr.open("POST", "../content/restricted/Process_AddUser.php");
         xhr.onload = function(e) {
             // Get response from PHP file
             var response = xhr.responseText;
