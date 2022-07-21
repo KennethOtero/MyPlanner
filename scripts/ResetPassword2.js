@@ -45,7 +45,7 @@ function ajax() {
 
             if (response == "Success") {
                 // Go to next reset password page
-                window.location.href = "../content/ResetPassword3.php";
+                window.location.href = "../content/common/ResetPassword3.php";
             } else {
                 // Display error
                 document.getElementById('message').innerHTML = "Incorrect Answer";
