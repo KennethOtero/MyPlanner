@@ -55,7 +55,7 @@ function ajax() {
                 // Hide success message after 5 seconds and go back to tasks
                 setTimeout(() => {                
                     Success.style.display = 'none';
-                    window.location.href = "../content/Tasks.php";
+                    window.location.href = "../content/common/Tasks.php";
                 }, 5000);
             } else {
                 Success.innerHTML = "Failed To Add Assignment";
