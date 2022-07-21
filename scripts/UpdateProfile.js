@@ -77,7 +77,7 @@ function ajax() {
 
         // AJAX
         var xhr = new XMLHttpRequest();
-        xhr.open("POST", "../content/Process_Profile.php");
+        xhr.open("POST", "../content/restricted/Process_Profile.php");
         xhr.onload = function() {
             var result = xhr.responseText;
             if (result == "Success") {
