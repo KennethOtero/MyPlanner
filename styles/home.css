@@ -11,8 +11,6 @@ body {
     background-color: #ecebee;
     max-height: 100%;
     min-height: 100%;
-    /* 10 pixels taller than footer to make footer not overlap elements */
-    margin-bottom: 145px;
 }
 
 /* ================ Navigation Bar Styling ================ */
@@ -68,6 +66,8 @@ a {
 .hamburger {
     display: none;
     cursor: pointer;
+    border: none;
+    background-color: #fff;
 }
 
 .bar {
@@ -80,6 +80,45 @@ a {
     background-color: #7d35ce;
 }
 
+/* ================ Opening Styling ================ */
+.OpeningContainer {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.OpeningContent {
+    float: left;
+    width: 50%;
+    background-color: #fff;
+    height: 450px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+}
+
+.OpeningTitle {
+    padding-top: 25%;
+    font-size: 3em;
+    color: #7d35ce;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.OpeningText {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 15px;
+    font-size: 1.25em;
+    width: 90%;
+}
+
+.OpeningImage {
+    margin-top: 15px;
+    height: 400px;
+    object-fit: cover;
+    width: 100%;
+}
+
 /* ================ Upcoming Assignments Styling ================ */
 .container {
     margin-left: 10px;
@@ -88,13 +127,13 @@ a {
 
 .Upcoming {
     background-color: #fff;
-    border-radius: 6px;
     padding: 10px 15px;
     margin-top: 15px;
     margin-left: auto;
     margin-right: auto;
     max-width: 1000px;
     align-items: center;
+    clear: both;
 }
 
 .Upcoming p {
@@ -159,7 +198,6 @@ a {
 
 .classes {
     background-color: #fff;
-    border-radius: 6px;
     padding: 10px 15px;
     margin-top: 15px;
     margin-left: auto;
@@ -234,14 +272,21 @@ a {
     text-decoration: underline;
 }
 
-/* ================ Release Notes ================ */
-.content {
-    background-color: #fff;
+/* ================ Release Notes & About ================ */
+.ReleaseNotes {
     max-width: 1000px;
     margin: 0 auto;
+}
+
+.content {
+    background-color: #fff;
+    width: 100%;
     margin-top: 15px;
     padding: 10px 15px;
-    border-radius: 6px;
+    margin-bottom: 15px;
+    float: left;
+    width: 50%;
+    min-height: 350px;
 }
 
 .content a {
@@ -278,35 +323,9 @@ a {
     margin-left: 15px;
 }
 
-/* ================ Footer ================ */
-.footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: #7d35ce;
-    color: #fff;
-    padding: 10px 15px;
-    height: 135px;
-}
-
-@media (max-height: 910px) {
-    .footer {
-        position: relative;
-        margin-top: 15px;
-    }
-}
-
-.footer h3 {
-    font-size: 1.5rem;
+.AboutText {
+    margin-top: 15px;
     text-align: center;
-    padding-bottom: 10px;
-    color: #fff;
-}
-
-.footer li {
-    text-align: center;
-    height: 27px;
-    color: #fff;
 }
 
 /* ================ Mobile Styling ================ */
@@ -370,5 +389,29 @@ a {
     .Upcoming {
         padding-right: 10px;
         padding-left: 10px;
+    }
+
+    /* Opening styling */
+    .OpeningContainer {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .OpeningContent {
+        width: 100%;
+        height: 150px;
+    }
+
+    .OpeningTitle {
+        padding-top: 0;
+        font-size: 2em;
+    }
+
+    .OpeningText {
+        font-size: 1em;
+    }
+
+    #OpeningImage {
+        display: none;
     }
 }
