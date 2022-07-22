@@ -109,15 +109,15 @@
 
     <div class="container">
         <div class="AddTask">
-            <a href="AddTask.php">Create An Assignment</a>
+            <a href="AddTask.php">Create an Assignment</a>
             <a href="EditSemester.php">Edit Semesters</a>
-            <a href="AddCourse.php">Add A Course</a>
+            <a href="AddCourse.php">Add a Course</a>
         </div>
     </div>
 
     <div class="container">
         <div class="upcoming">
-            <p>Unfinished Assignments</p>
+            <p>UNFINISHED ASSIGNMENTS</p>
             <table id="UpcomingTable">
                 <tr>
                     <th>Class</th>
@@ -179,8 +179,66 @@
     </div>
 
     <div class="container">
+        <div class="classes">
+            <p>COURSES THIS SEMESTER</p>
+            <table id="AllCourses">
+                <tr>
+                    <th>Course Number</th>
+                    <th>Course Name</th>
+                    <th>Instructor</th>
+                </tr>
+                <?php 
+                    // MySQL Connection variables                        
+                    $servername = "localhost";
+                    $username = "root";
+                    $password = "CPDM-OteroK";
+                    $database = "dbsql";
+                    
+                    // Create connection
+                    $conn = mysqli_connect($servername, $username, $password, $database);
+                    
+                    // Check connection
+                    if ($conn->connect_error) {
+                        die("Connection failed: " . $conn->connect_error);
+                    }
+
+                    if ($conn) {
+                        // Query
+                        $intUserID = $_SESSION['intUserID'];
+                        if (!isset($_SESSION['intSemesterID'])) {
+                            $intSemesterID = 0;
+                        } else {
+                            $intSemesterID = $_SESSION['intSemesterID'];
+                        }
+                        $query = "CALL uspCurrentCourses($intUserID, $intSemesterID)";
+                        $result = mysqli_query($conn, $query);
+
+                        while ($row = mysqli_fetch_assoc($result)) {
+                            // Get data
+                            $CourseNumber = $row['strCourseNumber'];
+                            $Course = $row['strCourse'];
+                            $Instructor = $row['strInstructor'];
+                            $intCourseID = $row['intCourseID'];
+
+                            // Display courses
+                            echo 
+                            '
+                            <tr>
+                                <td><a href="UpdateCourse.php?ID='. $intCourseID .'">'. $CourseNumber .'</a></td>
+                                <td>'. $Course .'</td>
+                                <td>'. $Instructor .'</td>
+                            </tr>
+                            ';
+                        }
+                    }
+                ?>
+            </table>
+        </div>
+    </div>
+
+    <div class="container">
         <div class="finished">
-        <p>Finished Assignments</p>
+        <p>FINISHED ASSIGNMENTS</p>
             <table id="UpcomingTable">
                 <tr>
                     <th>Class</th>
