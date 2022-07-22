@@ -7,6 +7,7 @@
     <title>My Planner | Create Task</title>
     <link rel="stylesheet" href="../../styles/home.css">
     <link rel="stylesheet" href="../../styles/addtask.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/tab_logo.png" />
 </head>
 <body>
     <?php 

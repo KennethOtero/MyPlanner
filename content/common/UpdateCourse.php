@@ -7,6 +7,7 @@
     <title>My Planner | Add A Course</title>
     <link rel="stylesheet" href="../../styles/home.css">
     <link rel="stylesheet" href="../../styles/addcourse.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/tab_logo.png" />
 </head>
 <body>
     <?php 

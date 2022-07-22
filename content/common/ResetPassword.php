@@ -7,6 +7,7 @@
     <title>My Planner | Reset Password</title>
     <link rel="stylesheet" href="../../styles/home.css">
     <link rel="stylesheet" href="../../styles/resetpassword.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/tab_logo.png" />
 </head>
 <body>
     <?php 
