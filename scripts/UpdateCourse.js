@@ -165,7 +165,7 @@ function deleteCourse() {
                     // Hide success message after 5 seconds
                     setTimeout(() => {                
                         Success.style.display = 'none';
-                        window.location.href = "../../index.php";
+                        window.location.href = "Tasks.php";
                     }, 3000);
                 } else {
                     Success.innerHTML = "Deletion Failed";

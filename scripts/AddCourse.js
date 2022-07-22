@@ -103,7 +103,7 @@ function ajax() {
                 // Hide success message after 5 seconds and go to Tasks
                 setTimeout(() => {                
                     Success.style.display = 'none';
-                    window.location.href = "../index.php";
+                    window.location.href = "Tasks.php";
                 }, 5000);
             } else {
                 // Display error
