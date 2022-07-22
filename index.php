@@ -61,6 +61,21 @@
         </nav>
     </header>
 
+    <div class="OpeningContainer">
+        <div class="OpeningContent">
+            <p class="OpeningTitle">
+                MY PLANNER
+            </p>
+            <p class="OpeningText">
+                My Planner is here to take control of your busy workload. 
+                Create an account now and streamline your academic success!
+            </p>
+        </div>
+        <div class="OpeningContent" id="OpeningImage">
+            <img src="images/bakaguya.jpg" class="OpeningImage" alt="OpeningImage">
+        </div>
+    </div>
+
     <div class="container">
         <div class="Upcoming">
             <p>TO-DO LIST</p>
@@ -93,13 +108,14 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="ReleaseNotes">
         <div class="content">
             <p class="Title">MY PLANNER UPDATE NOTES</p>
             <p class="Date">UPDATE 07/21/2022</p>
             <ul>
                 <li>Menu improvements</li>
                 <li>File organization</li>
+                <li>Revamped Homepage</li>
             </ul>
             <p class="Date">UPDATE 05/28/2022</p>
             <ul>
@@ -107,18 +123,17 @@
                 <li>Allowed users to edit courses</li>
                 <li>Allowed users to delete courses and assignments</li>
                 <li>Added a schedule view for courses</li>
-                <li>Find updates <a href="https://github.com/KennethOtero/MyPlanner" target="_blank">here</a></li>
             </ul>
         </div>
-    </div>
-
-    <div class="footer">
-        <h3>My Planner</h3>
-        <ul>
-            <li>Kenneth Otero</li>
-            <li>May 10, 2022</li>
-            <li>Version 1.0</li>
-        </ul>
+        <div class="content">
+            <p class="Title">ABOUT</p>
+            <p class="AboutText">
+                This website has been created by Kenneth Otero.
+                This is a personal project and there are currently no plans to host
+                the website yet.
+                You can follow the development of the site <a href="https://github.com/KennethOtero/MyPlanner" target="_blank">here.</a>
+            </p>
+        </div>
     </div>
 
     <script src="scripts/navbar.js"></script>
