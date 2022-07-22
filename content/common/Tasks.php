@@ -179,7 +179,7 @@
     </div>
 
     <div class="container">
-        <div class="classes">
+        <div class="AllCourses">
             <p>COURSES THIS SEMESTER</p>
             <table id="AllCourses">
                 <tr>
@@ -238,7 +238,7 @@
 
     <div class="container">
         <div class="finished">
-        <p>FINISHED ASSIGNMENTS</p>
+            <p>FINISHED ASSIGNMENTS</p>
             <table id="UpcomingTable">
                 <tr>
                     <th>Class</th>
