@@ -12,5 +12,5 @@
     session_destroy();
 
     // Redirect back to homepage
-    header('Location: ../index.php');
+    header('Location: ../../index.php');
 ?>

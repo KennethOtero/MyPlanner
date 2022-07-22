@@ -108,6 +108,14 @@
     </div>
 
     <div class="container">
+        <div class="AddTask">
+            <a href="AddTask.php">Create An Assignment</a>
+            <a href="EditSemester.php">Edit Semesters</a>
+            <a href="AddCourse.php">Add A Course</a>
+        </div>
+    </div>
+
+    <div class="container">
         <div class="upcoming">
             <p>Unfinished Assignments</p>
             <table id="UpcomingTable">
@@ -169,15 +177,6 @@
             </table>
         </div>
     </div>
-
-    <div class="container">
-        <div class="AddTask">
-            <a href="AddTask.php">Create An Assignment</a>
-            <a href="EditSemester.php">Edit Semesters</a>
-            <a href="AddCourse.php">Add A Course</a>
-        </div>
-    </div>
-    
 
     <div class="container">
         <div class="finished">
@@ -258,15 +257,6 @@
         // Close database connection
         $conn->close();
     ?>
-
-    <div class="footer">
-        <h3>My Planner</h3>
-        <ul>
-            <li>Kenneth Otero</li>
-            <li>May 10, 2022</li>
-            <li>Version 1.0</li>
-        </ul>
-    </div>
 
     <script src="../../scripts/navbar.js"></script>
 </body>

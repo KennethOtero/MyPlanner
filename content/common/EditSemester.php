@@ -147,15 +147,6 @@
         $conn->close();
     ?>
 
-    <div class="footer">
-        <h3>My Planner</h3>
-        <ul>
-            <li>Kenneth Otero</li>
-            <li>May 10, 2022</li>
-            <li>Version 1.0</li>
-        </ul>
-    </div>
-
     <script src="../../scripts/navbar.js"></script>
     <script src="../../scripts/EditSemester.js"></script>
 </body>
