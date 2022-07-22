@@ -42,7 +42,7 @@ function ajax() {
 
         // AJAX
         var xhr = new XMLHttpRequest();
-        xhr.open("POST", "../content/restricted/Process_AddTask.php");
+        xhr.open("POST", "../restricted/Process_AddTask.php");
         xhr.onload = function() {
             var result = xhr.responseText;
             if (result == "Success") {
@@ -55,7 +55,7 @@ function ajax() {
                 // Hide success message after 5 seconds and go back to tasks
                 setTimeout(() => {                
                     Success.style.display = 'none';
-                    window.location.href = "../content/common/Tasks.php";
+                    window.location.href = "Tasks.php";
                 }, 5000);
             } else {
                 Success.innerHTML = "Failed To Add Assignment";

@@ -36,7 +36,7 @@ function ajax() {
 
         // Check if current semester button was clicked
         var xhr = new XMLHttpRequest();
-        xhr.open("POST", "../content/restricted/Process_EditSemester.php");
+        xhr.open("POST", "../restricted/Process_EditSemester.php");
         xhr.onload = function() {
             var result = xhr.responseText;
             if (result == "Success") {
@@ -79,7 +79,7 @@ function deleteSemester() {
         if (confirm("Are you sure you want to delete this semester?")) {
             // AJAX
             var xhr = new XMLHttpRequest();
-            xhr.open("POST", "../content/restricted/Process_DeleteSemester.php");
+            xhr.open("POST", "../restricted/Process_DeleteSemester.php");
             xhr.onload = function() {
                 var result = xhr.responseText;
                 if (result == "Success") {

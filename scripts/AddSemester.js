@@ -53,7 +53,7 @@ function ajax() {
 
         // AJAX
         var xhr = new XMLHttpRequest();
-        xhr.open("POST", "../content/restricted/Process_AddSemester.php");
+        xhr.open("POST", "../restricted/Process_AddSemester.php");
         xhr.onload = function() {
             var result = xhr.responseText;
             if (result == "Success") {

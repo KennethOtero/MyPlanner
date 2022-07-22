@@ -98,7 +98,7 @@ function ajax() {
 
         // AJAX
         var xhr = new XMLHttpRequest();
-        xhr.open("POST", "../content/restricted/Process_AddUser.php");
+        xhr.open("POST", "../restricted/Process_AddUser.php");
         xhr.onload = function(e) {
             // Get response from PHP file
             var response = xhr.responseText;
@@ -113,7 +113,7 @@ function ajax() {
                 // Hide success message after 3 seconds and go to homepage
                 setTimeout(() => {                
                     document.getElementById('message').style.display = "none";
-                    window.location.href = "../index.php";
+                    window.location.href = "../../index.php";
                 }, 3000);
             } else if (response == "Email Exists") {
                 // Display error

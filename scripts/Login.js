@@ -52,14 +52,14 @@ function ajax() {
 
         // AJAX
         var xhr = new XMLHttpRequest();
-        xhr.open("POST", "../content/restricted/Process_Login.php");
+        xhr.open("POST", "../restricted/Process_Login.php");
         xhr.onload = function(e) {
             // Receive either 'Success' or 'Failed' from PHP file
             var response = xhr.responseText;
 
             if (response == "Success") {
                 // Redirect to homepage
-                window.location.href = "../index.php";
+                window.location.href = "../../index.php";
             } else {
                 // Display error
                 document.getElementById('message').innerHTML = "Login Failed";

@@ -61,7 +61,7 @@ function ajax() {
 
         // AJAX
         var xhr = new XMLHttpRequest();
-        xhr.open("POST", "../content/restricted/Process_UpdateAssignment.php?ID=" + intAssignmentID);
+        xhr.open("POST", "../restricted/Process_UpdateAssignment.php?ID=" + intAssignmentID);
         xhr.onload = function(e) {
             // Receive either 'Success' or 'Failed' from PHP file
             var response = xhr.responseText;
@@ -79,7 +79,7 @@ function ajax() {
                     document.getElementById('message').style.display = "none";
 
                     // Go to tasks page
-                    window.location.href = "../content/common/Tasks.php";
+                    window.location.href = "Tasks.php";
                 }, 3000);                
             } else {
                 // Display error
@@ -118,7 +118,7 @@ function deleteAssignment() {
 
             // AJAX
             var xhr = new XMLHttpRequest();
-            xhr.open("POST", "../content/restricted/Process_DeleteAssignment.php?ID=" + intAssignmentID);
+            xhr.open("POST", "../restricted/Process_DeleteAssignment.php?ID=" + intAssignmentID);
             xhr.onload = function() {
                 // Receive either 'Success' or 'Failed' from PHP file
                 var response = xhr.responseText;
@@ -136,7 +136,7 @@ function deleteAssignment() {
                         document.getElementById('message').style.display = "none";
 
                         // Go to tasks page
-                        window.location.href = "../content/common/Tasks.php";
+                        window.location.href = "Tasks.php";
                     }, 3000);                
                 } else {
                     // Display error

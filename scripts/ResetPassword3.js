@@ -76,7 +76,7 @@ function ajax() {
 
         // AJAX
         var xhr = new XMLHttpRequest();
-        xhr.open("POST", "../content/restricted/Process_ResetPassword3.php");
+        xhr.open("POST", "../restricted/Process_ResetPassword3.php");
         xhr.onload = function(e) {
             // Receive either 'Success' or 'Failed' from PHP file
             var response = xhr.responseText;
@@ -94,7 +94,7 @@ function ajax() {
                     document.getElementById('message').style.display = "none";
 
                     // Go to login page
-                    window.location.href = "../content/common/Login.php";
+                    window.location.href = "Login.php";
                 }, 3000);                
             } else {
                 // Display error

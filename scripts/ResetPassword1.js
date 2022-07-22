@@ -39,14 +39,14 @@ function ajax() {
 
         // AJAX
         var xhr = new XMLHttpRequest();
-        xhr.open("POST", "../content/restricted/Process_ResetPassword1.php");
+        xhr.open("POST", "../restricted/Process_ResetPassword1.php");
         xhr.onload = function(e) {
             // Receive either 'Success' or 'Failed' from PHP file
             var response = xhr.responseText;
 
             if (response == "Success") {
                 // Go to next reset password page
-                window.location.href = "../content/common/ResetPassword2.php";
+                window.location.href = "ResetPassword2.php";
             } else {
                 // Display error
                 document.getElementById('message').innerHTML = "Email Does Not Exist";

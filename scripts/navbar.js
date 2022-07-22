@@ -22,4 +22,3 @@ document.addEventListener('mouseup', function(e) {
         navMenu.classList.remove("active");
     }));
 });
-

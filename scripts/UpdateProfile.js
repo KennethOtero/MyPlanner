@@ -22,7 +22,9 @@ toggleConfirm.addEventListener("click", function () {
     this.classList.toggle("bi-eye");
 });
 
+// Form validation
 function validateForm() {
+    // Result variable
     var blnResult = true;
 
     // Get form data
@@ -77,7 +79,7 @@ function ajax() {
 
         // AJAX
         var xhr = new XMLHttpRequest();
-        xhr.open("POST", "../content/restricted/Process_Profile.php");
+        xhr.open("POST", "../restricted/Process_Profile.php");
         xhr.onload = function() {
             var result = xhr.responseText;
             if (result == "Success") {
