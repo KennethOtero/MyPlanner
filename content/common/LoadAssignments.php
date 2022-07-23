@@ -50,7 +50,7 @@
                 $intSemesterID = $_SESSION['intSemesterID'];
             }
             
-            $query = "CALL uspUnfinishedAssignments($intUserID, $intSemesterID)";
+            $query = "CALL uspMonthlyAssignments($intUserID, $intSemesterID)";
             $result = mysqli_query($conn, $query);
 
             if (mysqli_num_rows($result) > 0) {
@@ -79,7 +79,7 @@
                 echo 
                 '
                 <tr>
-                    <td colspan="4" class="error">No unfinished assignments</td>
+                    <td colspan="4" class="error">No assignments due this month</td>
                 </tr>
                 <style>
                     .error {
