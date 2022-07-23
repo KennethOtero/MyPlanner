@@ -61,11 +61,7 @@
             </button>
         </nav>
     </header>
-
-    <div class="main">
-        
-    </div>
-
+    
     <div class="OpeningContainer">
         <div class="OpeningContent">
             <p class="OpeningTitle">
