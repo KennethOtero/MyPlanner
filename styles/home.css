@@ -54,13 +54,9 @@ a {
     padding-right: 100px;
 }
 
-.nav-link {
-    transition: 0.15s ease;
-}
-
 .nav-link:hover {
-    background-color:#7d35ce;
-    color: #fff;
+    border-bottom: 2px solid #7d35ce;
+    color: #7d35ce;
 }
 
 .hamburger {
@@ -378,6 +374,12 @@ a {
     .navbar {
         margin-left: 0;
         margin-right: 0;
+    }
+
+    .nav-link:hover {
+        border: none; /* Remove default bottom border */
+        border-right: 2px solid #7d35ce;
+        color: #7d35ce;
     }
 
     #AllCourses {
