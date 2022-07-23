@@ -62,13 +62,17 @@
         </nav>
     </header>
 
+    <div class="main">
+        
+    </div>
+
     <div class="OpeningContainer">
         <div class="OpeningContent">
             <p class="OpeningTitle">
                 MY PLANNER
             </p>
             <p class="OpeningText">
-                My Planner is here to take control of your busy workload. 
+                My Planner is here to assist you in your busy workload. 
                 Create an account now and streamline your academic success!
             </p>
         </div>
@@ -79,7 +83,7 @@
 
     <div class="container">
         <div class="Upcoming">
-            <p>TO-DO LIST</p>
+            <p>DUE THIS MONTH</p>
             <table id="UpcomingTable">
                 <tr>
                     <th>Class</th>
