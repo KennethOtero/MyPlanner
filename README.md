@@ -2,7 +2,7 @@
 
 Purpose:
 
-This is a personal project of mine that allows users to keep track of their schoolwork. I wanted to create this mainly for myself as a way to stay on top of my homework. I wanted to do my own take on this concept and do it in the purest way possible, without any of the fluff other apps provide. My Planner utilizes the skillset I learned while pursuing my Associates degree and also some tech I learned while creating this project. The project utilizes AJAX to interact with my database without refreshing the page, allowing for a better user experience. My Planner doesn't utilize any frameworks (at the moment) and was created in pure JavaScript, PHP, MySQL, CSS, and HTML. Currently I run this site locally, so there aren't any plans to host it yet. If the site gets more advanced, I may consider hosting.
+This is a personal project of mine that allows users to keep track of their schoolwork. I wanted to create this mainly for myself as a way to stay on top of my homework. I wanted to do my own take on this concept and do it in the purest way possible, without any of the fluff other apps provide. My Planner utilizes the skillset I learned while pursuing my Associates degree and also some tech I learned while creating this project. The project utilizes AJAX to interact with my database without refreshing the page, allowing for a better user experience. My Planner doesn't utilize any frameworks (at the moment) and was created in pure JavaScript, PHP, MySQL, CSS, and HTML. Currently I run this site locally, so there aren't any plans to host it yet. If the site gets more advanced I may consider hosting.
 
 Functionality:
 
