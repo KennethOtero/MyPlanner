@@ -43,6 +43,7 @@ DROP PROCEDURE IF EXISTS uspDeleteSemester;
 DROP PROCEDURE IF EXISTS uspResetPassword;
 DROP PROCEDURE IF EXISTS uspDeleteCourse;
 DROP PROCEDURE IF EXISTS uspDeleteAssignment;
+DROP PROCEDURE IF EXISTS uspMonthlyAssignments;
 
 -- --------------------------------------------------------------------------------
 -- Create Tables
@@ -1076,5 +1077,36 @@ START TRANSACTION;
 		strModified_Reason = p_strModified_Reason
 	WHERE intAssignmentAuditID = @intAssignmentAuditID;
 COMMIT;
+END //
+DELIMITER ;
+
+-- Select all assignments that have due dates between now and the next 30 days
+DELIMITER //
+CREATE PROCEDURE uspMonthlyAssignments (
+    IN p_intUserID INTEGER,
+    IN p_intSemesterID INTEGER
+)
+BEGIN
+	SELECT
+		TA.intAssignmentID,
+        TA.strAssignment,
+        TA.dtmDueDate,
+        TC.intCourseID,
+        TC.strCourse,
+        TS.strStatus
+    FROM
+		TCourses as TC JOIN TAssignments as TA
+			ON TC.intCourseID = TA.intCourseID
+		JOIN TStatuses as TS
+			ON TS.intStatusID = TA.intStatusID
+		JOIN TUsers as TU
+			ON TU.intUserID = TC.intUserID
+		JOIN TSemesters as TSM
+			ON TSM.intSemesterID = TC.intSemesterID
+	WHERE
+		TU.intUserID = p_intUserID 
+        AND TS.intStatusID = 1 
+        AND TSM.intSemesterID = p_intSemesterID
+        AND TA.dtmDueDate > NOW() AND TA.dtmDueDate < DATE_ADD(NOW(), INTERVAL 30 DAY);
 END //
 DELIMITER ;
