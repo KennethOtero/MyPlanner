@@ -416,4 +416,15 @@ a {
     #OpeningImage {
         display: none;
     }
+
+    /* Release Notes styling */
+    .ReleaseNotes {
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 100%;
+    }
+
+    .content {
+        width: 100%; /* Stack about/release notes */
+    }
 }
