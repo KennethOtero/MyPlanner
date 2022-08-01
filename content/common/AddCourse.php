@@ -143,6 +143,15 @@
         </div>
     </div>
 
+    <div class="footer">
+        <p class="FooterTitle">MY PLANNER</p>
+        <ul class="FooterLinks">
+            <li><a href="../common/About.php">ABOUT</a></li>
+            <li><a href="https://github.com/KennethOtero/MyPlanner" target="_blank">GITHUB</a></li>
+            <li><a href="../common/Staff.php">STAFF</a></li>
+        </ul>
+    </div>
+
     <script src="../../scripts/navbar.js"></script>        
     <script src="../../scripts/AddCourse.js"></script>
 </body>
