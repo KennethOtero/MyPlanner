@@ -362,6 +362,10 @@ a {
     color: #fff;
 }
 
+.FooterLinks a:hover {
+    text-decoration: underline;
+}
+
 /* ================ Mobile Styling ================ */
 
 @media (max-width: 1180px) {
