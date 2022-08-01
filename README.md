@@ -1,9 +1,13 @@
 # My Planner Project
 
-Purpose:
+##Purpose
 
-This is a personal project of mine that allows users to keep track of their schoolwork. I wanted to create this mainly for myself as a way to stay on top of my homework. I wanted to do my own take on this concept and do it in the purest way possible, without any of the fluff other apps provide. My Planner utilizes the skillset I learned while pursuing my Associates degree and also some tech I learned while creating this project. The project utilizes AJAX to interact with my database without refreshing the page, allowing for a better user experience. My Planner doesn't utilize any frameworks (at the moment) and was created in pure JavaScript, PHP, MySQL, CSS, and HTML. Currently I run this site locally, so there aren't any plans to host it yet. If the site gets more advanced I may consider hosting.
+My Planner is a personal project that allows users to keep track of their schoolwork. I wanted to create this mainly as a way to stay on top of my assignments in the purest way possible, with the simplicity that an app like this provides.
 
-Functionality:
+##Functionality
 
-Users can create and edit their accounts. Upon account creation, users have to choose their starting semester (Spring, Summer, Fall) along with the year. After doing so, users can create their courses and create assignments for said courses. On the homepage, users can see all of their unfinished assignments, and on the tasks page edit those assignments to show completion, edit their contents, as well as create/edit more assignments, courses, or semesters. The schedule page shows all of the user's classes throughout the week (Mon-Fri) for the current semester. If a day has more than one class, those classes are ordered by their start time. My Planner is also made to accomodate different screen sizes, utilizing a hamburger style menu on smaller screens.
+How does it work? Well, users can start by creating an account in My Planner. Upon account creation, users have to choose their starting semester (Spring, Summer, Fall) along with the year. After doing so, users can create their courses and assignments for said courses. On the homepage, users can see all of their assignments that are due in the next 30 days. The tasks page is brains of the site, allowing users to edit assignments to show completion status, edit their contents, as well as create/edit more courses and semesters. The schedule page shows all of the user's classes throughout the week (Mon-Fri) for the current semester. If a day has more than one class, those classes are ordered by their start time.
+
+## Technical Details
+
+My Planner utilizes the skillset I learned while pursuing my Associates degree and also some tech I had to learn while creating this project. My Planner uses AJAX and PHP to interact with a MySQL database without refreshing the page, allowing for a better user experience as the page doesn't have to be reloaded or sent somewhere else. The database that My Planner runs on has full auditing, allowing devs to track sensitive information and any other database changes. My Planner doesn't utilize any frameworks and was created in pure JavaScript, PHP, MySQL, CSS, and HTML.
