@@ -73,7 +73,7 @@
             </p>
         </div>
         <div class="OpeningContent" id="OpeningImage">
-            <img src="images/bakaguya.jpg" class="OpeningImage" alt="OpeningImage">
+            <img src="images/planner_image.jpg" class="OpeningImage" alt="OpeningImage">
         </div>
     </div>
 
