@@ -7,10 +7,12 @@
     color: #424242;
 }
 
+html, body {
+    height: 100%; /* this is for the footer */
+}
+
 body {
     background-color: #ecebee;
-    max-height: 100%;
-    min-height: 100%;
 }
 
 /* ================ Navigation Bar Styling ================ */
@@ -324,6 +326,42 @@ a {
     text-align: center;
 }
 
+/* ================ Footer Styling ================ */
+.footer {
+    clear: both; /* Remove float interference */
+    position: sticky; /* Stick the footer to the bottom of the page */
+    top: 100vh;
+    background-color: #7d35ce;
+    width: 100%;
+    padding: 10px 15px;
+    text-align: center;
+    height: 90px;
+    display: flex; /* Center content */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.FooterTitle {
+    text-align: center;
+    color: #fff;
+    font-size: 1.75em;
+    width: 100%;
+}
+
+.FooterLinks {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.FooterLinks li {
+    display: inline;
+}
+
+.FooterLinks a {
+    color: #fff;
+}
+
 /* ================ Mobile Styling ================ */
 
 @media (max-width: 1180px) {
@@ -426,5 +464,10 @@ a {
 
     .content {
         width: 100%; /* Stack about/release notes */
+    }
+
+    /* Footer */
+    .footer {
+        display: block;
     }
 }
