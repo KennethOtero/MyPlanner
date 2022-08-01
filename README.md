@@ -1,10 +1,10 @@
 # My Planner Project
 
-##Purpose
+## Purpose
 
 My Planner is a personal project that allows users to keep track of their schoolwork. I wanted to create this mainly as a way to stay on top of my assignments in the purest way possible, with the simplicity that an app like this provides.
 
-##Functionality
+## Functionality
 
 How does it work? Well, users can start by creating an account in My Planner. Upon account creation, users have to choose their starting semester (Spring, Summer, Fall) along with the year. After doing so, users can create their courses and assignments for said courses. On the homepage, users can see all of their assignments that are due in the next 30 days. The tasks page is brains of the site, allowing users to edit assignments to show completion status, edit their contents, as well as create/edit more courses and semesters. The schedule page shows all of the user's classes throughout the week (Mon-Fri) for the current semester. If a day has more than one class, those classes are ordered by their start time.
 
