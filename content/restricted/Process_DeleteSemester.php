@@ -14,9 +14,9 @@
     try {
         // MySQL Connection variables                        
         $servername = "localhost";
-        $username = "root";
-        $password = "CPDM-OteroK";
-        $database = "dbsql";
+        $username = "id19362852_myplannerko";
+        $password = "6Q3Q|FZA}ue0^D=[";
+        $database = "id19362852_myplannerdb";
         
         // Create connection
         $conn = mysqli_connect($servername, $username, $password, $database);
