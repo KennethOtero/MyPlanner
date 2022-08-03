@@ -1,3 +1,10 @@
+<?php 
+    // Start the session (This must be at the top of each file)
+    if (!isset($_SESSION)) {
+        session_start();
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,12 +16,6 @@
     <link rel="shortcut icon" type="image/x-icon" href="images/tab_logo.png">
 </head>
 <body>
-    <?php 
-        // Start the session
-        if (!isset($_SESSION)) {
-            session_start();
-        }
-    ?>
     <header>
         <nav class="navbar">
             <a href="index.php" class="nav-branding">MY PLANNER</a>
@@ -112,27 +113,24 @@
     <div class="ReleaseNotes">
         <div class="content">
             <p class="Title">MY PLANNER UPDATE NOTES</p>
+            <p class="Date">UPDATE 08/03/2022</p>
+            <ul>
+                <li>New Footer</li>
+                <li>New About and Staff pages</li>
+                <li>My Planner is finally online!</li>
+            </ul>
             <p class="Date">UPDATE 07/21/2022</p>
             <ul>
                 <li>Menu improvements</li>
                 <li>File organization</li>
                 <li>Revamped Homepage</li>
             </ul>
-            <p class="Date">UPDATE 05/28/2022</p>
-            <ul>
-                <li>Allowed users to pick course days and times</li>
-                <li>Allowed users to edit courses</li>
-                <li>Allowed users to delete courses and assignments</li>
-                <li>Added a schedule view for courses</li>
-            </ul>
         </div>
         <div class="content">
             <p class="Title">ABOUT</p>
             <p class="AboutText">
-                This website has been created by Kenneth Otero.
-                This is a personal project and there are currently no plans to host
-                the website yet.
-                You can follow the development of the site <a href="https://github.com/KennethOtero/MyPlanner" target="_blank">here.</a>
+                Welcome to My Planner! This website is here to assist you in organizing and tracking your schoolwork. 
+                Read more about My Planner's purpose <a href="content/common/About.php">here.</a>
             </p>
         </div>
     </div>
