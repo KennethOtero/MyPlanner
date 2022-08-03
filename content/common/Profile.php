@@ -1,3 +1,14 @@
+<?php 
+    // Start the session
+    if (!isset($_SESSION)) {
+        session_start();
+    }
+
+    if (!isset($_SESSION['txtName'])) {
+        $_SESSION['txtName'] = "";
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,16 +22,6 @@
     <link rel="shortcut icon" type="image/x-icon" href="../../images/tab_logo.png" />
 </head>
 <body>
-    <?php 
-        // Start the session
-        if (!isset($_SESSION)) {
-            session_start();
-        }
-
-        if (!isset($_SESSION['txtName'])) {
-            $_SESSION['txtName'] = "";
-        }
-    ?>
     <header>
         <nav class="navbar">
             <a href="../../index.php" class="nav-branding">MY PLANNER</a>
@@ -72,9 +73,9 @@
         try {
             // MySQL Connection variables                        
             $servername = "localhost";
-            $username = "root";
-            $password = "CPDM-OteroK";
-            $database = "dbsql";
+            $username = "id19362852_myplannerko";
+            $password = "6Q3Q|FZA}ue0^D=[";
+            $database = "id19362852_myplannerdb";
             
             // Create connection
             $conn = mysqli_connect($servername, $username, $password, $database);

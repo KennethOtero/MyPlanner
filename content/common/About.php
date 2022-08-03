@@ -1,3 +1,10 @@
+<?php 
+    // Start the session
+    if (!isset($_SESSION)) {
+        session_start();
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,17 +17,6 @@
     <link rel="shortcut icon" type="image/x-icon" href="../../images/tab_logo.png" />
 </head>
 <body>
-    <?php 
-        // Start the session
-        if (!isset($_SESSION)) {
-            session_start();
-        }
-
-        // Redirect if user is not logged in
-        if ($_SESSION['blnLoggedIn'] == FALSE) {
-            header('Location: Login.php');
-        }
-    ?>
     <header>
         <nav class="navbar">
             <a href="../../index.php" class="nav-branding">MY PLANNER</a>
@@ -96,9 +92,8 @@
         </p>
         <p class="Subtitle">The Road Ahead:</p>
         <p class="AboutText"> 
-            My Planner is still in its infancy and thus is developed and run locally, so there aren't any plans to host it yet. 
-            If the site gets more advanced I may consider hosting. As for the future, it would be nice to have a mobile version My Planner as well as a more in-depth calendar system
-            and the introduction of notifications.
+            For the future, it would be nice to have a mobile version My Planner as well as a more in-depth calendar system
+            and the introduction of email and/or push-notifications.
         </p>
     </div>
 

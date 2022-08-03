@@ -1,3 +1,15 @@
+<?php 
+    // Start the session
+    if (!isset($_SESSION)) {
+        session_start();
+    }
+
+    // Redirect if user is not logged in
+    if ($_SESSION['blnLoggedIn'] == FALSE) {
+        header('Location: Login.php');
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,17 +22,6 @@
     <link rel="shortcut icon" type="image/x-icon" href="../../images/tab_logo.png" />
 </head>
 <body>
-    <?php 
-        // Start the session
-        if (!isset($_SESSION)) {
-            session_start();
-        }
-
-        // Redirect if user is not logged in
-        if ($_SESSION['blnLoggedIn'] == FALSE) {
-            header('Location: Login.php');
-        }
-    ?>
     <header>
         <nav class="navbar">
             <a href="../../index.php" class="nav-branding">MY PLANNER</a>
