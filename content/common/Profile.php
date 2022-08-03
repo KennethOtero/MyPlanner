@@ -4,9 +4,13 @@
         session_start();
     }
 
+    // Set name to blank if the session name isn't there
     if (!isset($_SESSION['txtName'])) {
         $_SESSION['txtName'] = "";
     }
+
+    // Include DB connection
+    include '../restricted/DB_Connection.php';
 ?>
 
 <!DOCTYPE html>
@@ -71,19 +75,8 @@
 
     <?php 
         try {
-            // MySQL Connection variables                        
-            $servername = "localhost";
-            $username = "id19362852_myplannerko";
-            $password = "6Q3Q|FZA}ue0^D=[";
-            $database = "id19362852_myplannerdb";
-            
-            // Create connection
-            $conn = mysqli_connect($servername, $username, $password, $database);
-            
-            // Check connection
-            if ($conn->connect_error) {
-                die("Connection failed: " . $conn->connect_error);
-            }
+            // Connect to DB
+            $conn = OpenConnection();
 
             if ($conn) {
                 // Get Profile data
@@ -141,6 +134,11 @@
             </form>
         </div>
     </div>
+
+    <?php 
+        // Close DB connection
+        CloseConnection($conn);
+    ?>
 
     <div class="footer">
         <p class="FooterTitle">MY PLANNER</p>
