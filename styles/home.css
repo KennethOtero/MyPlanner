@@ -121,6 +121,8 @@ a {
 .container {
     margin-left: 10px;
     margin-right: 10px;
+    overflow: hidden; /* Add scroll if the content overflows */
+    overflow-x: scroll;
 }
 
 .Upcoming {
