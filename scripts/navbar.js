@@ -27,7 +27,6 @@ document.addEventListener('mouseup', function(e) {
 var activePage =  window.location.pathname;
 var navLinks = document.querySelectorAll("nav a").
 forEach(link => {
-    console.log(link.href);
     if (link.href.includes(`${activePage}`)) {
         link.classList.add('active');
     }
