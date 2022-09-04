@@ -127,8 +127,7 @@ a {
 .container {
     margin-left: 10px;
     margin-right: 10px;
-    overflow: hidden; /* Add scroll if the content overflows */
-    overflow-x: scroll;
+    clear: both;
 }
 
 .Upcoming {
@@ -470,6 +469,11 @@ a {
 
     #OpeningImage {
         display: none;
+    }
+
+    .container {
+        overflow: hidden; /* Add scroll if the content overflows */
+        overflow-x: scroll;
     }
 
     /* Release Notes styling */
