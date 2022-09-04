@@ -22,3 +22,13 @@ document.addEventListener('mouseup', function(e) {
         navMenu.classList.remove("active");
     }));
 });
+
+// Show current tab on navbar
+var activePage =  window.location.pathname;
+var navLinks = document.querySelectorAll("nav a").
+forEach(link => {
+    console.log(link.href);
+    if (link.href.includes(`${activePage}`)) {
+        link.classList.add('active');
+    }
+})

@@ -57,6 +57,12 @@ a {
 }
 
 .nav-link:hover {
+    /* border-bottom: 2px solid #7d35ce; */
+    color: #7d35ce;
+}
+
+/* Show the current page the user is on */
+.nav-menu a.active {
     border-bottom: 2px solid #7d35ce;
     color: #7d35ce;
 }
