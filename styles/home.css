@@ -57,7 +57,6 @@ a {
 }
 
 .nav-link:hover {
-    /* border-bottom: 2px solid #7d35ce; */
     color: #7d35ce;
 }
 
@@ -426,7 +425,12 @@ a {
     }
 
     .nav-link:hover {
-        border: none; /* Remove default bottom border */
+        color: #7d35ce;
+    }
+
+    /* Show the current page the user is on */
+    .nav-menu a.active {
+        border: none; /* Remove border bottom on active tab */
         border-right: 2px solid #7d35ce;
         color: #7d35ce;
     }
