@@ -2,7 +2,7 @@
 
 ## Purpose
 
-My Planner is a personal project that allows users to keep track of their schoolwork. I wanted to create this mainly as a way to stay on top of my assignments in the purest way possible, with the simplicity that an app like this provides. [As of 08/03/2022 My Planner is finally online!](https://myplannerko.000webhostapp.com/index.php)
+My Planner is a personal project that allows users to keep track of their schoolwork. I wanted to create this mainly as a way to stay on top of my assignments in the purest way possible, with the simplicity that an app like this provides. [As of 08/03/2022 My Planner is finally online!](https://myplannerko.000webhostapp.com/index.php) Note: Hostinger (the hosting service for MyPlanner) often experiences significant downtime at their free tier. The website may have trouble loading at times.
 
 ## Functionality
 
